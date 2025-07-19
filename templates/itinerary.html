@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Your Itinerary for {{ rec.place }}</h2>
+<p><strong>Cuisine Recommendation:</strong> {{ rec.cuisine }}</p>
+<p><strong>Hotels:</strong> {{ rec.hotels }}</p>
+
+<h4>Day-wise Plan:</h4>
+<ul class="list-group">
+  {% for day in itinerary_list %}
+    <li class="list-group-item">{{ day }}</li>
+  {% endfor %}
+</ul>
+<a href="{{ url_for('dashboard') }}" class="btn btn-primary mt-3">Plan Another Trip</a>
+{% endblock %}

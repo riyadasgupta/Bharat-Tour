@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Welcome, {{ username }}!</h2>
+<p>Select your travel style to get a personalized itinerary.</p>
+<form method="POST" novalidate>
+  {{ form.hidden_tag() }}
+  <div class="mb-3">
+    {{ form.preference.label(class="form-label") }}
+    {{ form.preference(class="form-select") }}
+    {% for error in form.preference.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+  <div class="mb-3">
+    {{ form.days.label(class="form-label") }}
+    {{ form.days(class="form-control", placeholder="Number of days") }}
+    {% for error in form.days.errors %}
+      <div class="text-danger">{{ error }}</div>
+    {% endfor %}
+  </div>
+  <button type="submit" class="btn btn-success">Get Recommendations</button>
+</form>
+{% endblock %}

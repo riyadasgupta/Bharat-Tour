@@ -1,0 +1,109 @@
+state_ut,region,cuisine
+Andhra Pradesh,Visakhapatnam,Pulihora, Gongura Pachadi
+Andhra Pradesh,Araku Valley,Bamboo Chicken
+Andhra Pradesh,Amaravati,Mudda Pappu, Ulavacharu Biryani
+Arunachal Pradesh,Tawang,Thukpa, Momos
+Arunachal Pradesh,Ziro,Smoked Pork, Bamboo Shoot Curry
+Arunachal Pradesh,Itanagar,Pika Pila, Lukter
+Assam,Majuli,Assamese Thali, Masor Tenga
+Assam,Tezpur,Khar, Pitha
+Assam,Guwahati,Assam Laksa, Aloo Pitika
+Bihar,Patna,Litti Chokha, Kadhi Badi
+Bihar,Bodh Gaya,Khaja, Anarsa
+Bihar,Nalanda,Choora, Thekua
+Chhattisgarh,Raipur,Chana Samosa, Faraa
+Chhattisgarh,Bilaspur,Aamat, Chana Ghugni
+Chhattisgarh,Bastar,Bara, Muthia
+Goa,Panaji,Goan Fish Curry, Sorpotel
+Goa,Baga,Bebinca, Xacuti
+Goa,Vasco da Gama,Prawn Balchão, Sanna
+Gujarat,Ahmedabad,Dhokla, Khandvi
+Gujarat,Vadodara,Handvo, Sev Tameta nu Shaak
+Gujarat,Rann of Kutch,Khichu, Bajra Rotla
+Haryana,Gurgaon,Bajra Khichdi, Bathua Raita
+Haryana,Panipat,Kadhi Pakora, Churma
+Haryana,Rohtak,Besan Masala Roti, Alsi ki Pinni
+Himachal Pradesh,Shimla,Chana Madra, Dham
+Himachal Pradesh,Manali,Siddu, Babru
+Himachal Pradesh,Dharamshala,Tudkiya Bhath, Aktori
+Jharkhand,Ranchi,Thekua, Dhuska
+Jharkhand,Jamshedpur,Litti, Handia
+Jharkhand,Deoghar,Pitha, Sattu
+Karnataka,Bangalore,Bisi Bele Bath, Ragi Mudde
+Karnataka,Mysuru,Mysore Pak, Kesari Bath
+Karnataka,Hampi,Jolad Roti, Belle Dose
+Kerala,Alleppey,Kerala Sadya, Fish Molee
+Kerala,Munnar,Malabar Biryani, Ela Ada
+Kerala,Kochi,Nadan Kozhi Curry, Appam
+Madhya Pradesh,Bhopal,Bhopali Gosht Korma, Poha Jalebi
+Madhya Pradesh,Indore,Garadu, Bhutte ka Kees
+Madhya Pradesh,Khajuraho,Dal Bafla, Chakki ki Shak
+Maharashtra,Mumbai,Vada Pav, Bombil Fry
+Maharashtra,Pune,Misal Pav, Puran Poli
+Maharashtra,Nashik,Bharli Vangi, Modak
+Manipur,Imphal,Eromba, Chamthong
+Manipur,Loktak Lake,Nganam, Alu Kangmet
+Manipur,Bishnupur,Pakhora, Ooti
+Meghalaya,Shillong,Jadoh, Dohneiiong
+Meghalaya,Cherrapunji,Tung Rymbai, Pukhlein
+Meghalaya,Mawlynnong,Kyat, Bamboo Shoot Curry
+Mizoram,Aizawl,Bai, Sawhchiar
+Mizoram,Champhai,Vawksa Rep, Bamboo Steamed Fish
+Mizoram,Lunglei,Chhum Han, Misa Mach Poora
+Nagaland,Kohima,Smoked Pork Curry, Akhuni
+Nagaland,Mon,Bamboo Shoot Fish, Bush Meat
+Nagaland,Tuensang,Zutho, Pork Stew
+Odisha,Bhubaneswar,Pakhala Bhata, Dahi Pakhala
+Odisha,Puri,Khicede, Chenna Poda
+Odisha,Konark,Ambila, Dalma
+Punjab,Amritsar,Sarson da Saag, Makki di Roti
+Punjab,Ludhiana,Chole Bhature, Paneer Tikka
+Punjab,Patiala,Aloo Paratha, Lassi
+Rajasthan,Jaipur,Dal Baati Churma, Ghevar
+Rajasthan,Udaipur,Laal Maas, Gatte ki Sabzi
+Rajasthan,Jaisalmer,Kair Sangri, Mawa Kachori
+Sikkim,Gangtok,Phagshapa, Sel Roti
+Sikkim,North Sikkim,Thukpa, Gundruk Soup
+Sikkim,Namchi,Momo, Kinema Curry
+Tamil Nadu,Madurai,Kari Dosa, Jigarthanda
+Tamil Nadu,Chennai,Idiyappam, Chicken Chettinad
+Tamil Nadu,Ooty,Veg Kurma, Ooty Chocolates
+Telangana,Hyderabad,Hyderabadi Biryani, Qubani ka Meetha
+Telangana,Warangal,Sarva Pindi, Chegodilu
+Telangana,Karimnagar,Dosa, Mirchi Bajji
+Tripura,Agartala,Mui Borok, Chauk
+Tripura,Udaipur,Bhangui, Gudok
+Tripura,Dhalai,Wahan Mosdeng, Muya Awandru
+Uttar Pradesh,Varanasi,Baati Chokha, Tamatar Chaat
+Uttar Pradesh,Lucknow,Tunday Kababi, Sheermal
+Uttar Pradesh,Agra,Paratha, Petha
+Uttarakhand,Dehradun,Kandalee Ka Saag, Aloo Ke Gutke
+Uttarakhand,Nainital,Bhatt Ki Churdkani, Ras Bhaat
+Uttarakhand,Haridwar,Chainsoo, Arsa
+West Bengal,Kolkata,Shorshe Ilish, Kosha Mangsho
+West Bengal,Shantiniketan,Pithe, Labra
+West Bengal,Darjeeling,Momo, Thukpa
+Delhi,Old Delhi,Nihari, Daulat ki Chaat
+Delhi,Connaught Place,Butter Chicken, Kulfi
+Delhi,South Delhi,Rajma Chawal, Chole Bhature
+Puducherry,French Quarter,Creole Fish Curry, Baguette
+Puducherry,Auroville,Idli-Sambar, European Pastries
+Puducherry,Beach Road,Coconut Curry, Coffee
+Ladakh,Leh,Thukpa, Tingmo
+Ladakh,Nubra Valley,Butter Tea, Mokthuk
+Ladakh,Kargil,Khambir, Skyu
+Jammu and Kashmir,Srinagar,Rogan Josh, Modur Pulav
+Jammu and Kashmir,Jammu,Kalaadi Cheese, Rajma Chawal
+Jammu and Kashmir,Gulmarg,Gustaba, Sheekh Kebab
+Andaman and Nicobar Islands,Port Blair,Seafood Curry, Grilled Fish
+Andaman and Nicobar Islands,Havelock Island,Lobster, Coconut Fish Curry
+Andaman and Nicobar Islands,Ross Island,Karimeen Fry, Banana Chips
+Lakshadweep,Kavaratti,Tuna Curry, Coconut Rice
+Lakshadweep,Minicoy,Fish Pakora, Curd Rice
+Lakshadweep,Kalpeni,Octopus Fry, Sweet Coconut Balls
+Chandigarh,Sector 17 Market,Chole Bhature, Lassi
+Chandigarh,Rock Garden,Rajma Rice, Paneer Butter Masala
+Chandigarh,Sukhna Lake,Channa Kulcha, Jalebi
+Dadra and Nagar Haveli and Daman and Diu,Daman,Grilled Pomfret, Portuguese Vindaloo
+Dadra and Nagar Haveli and Daman and Diu,Diu,Chicken Cafreal, Rice Bhakri
+Dadra and Nagar Haveli and Daman and Diu,Silvassa,Khichdi, Fish Bhajji

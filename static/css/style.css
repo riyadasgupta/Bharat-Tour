@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+/* Container style */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.13);
+    border-radius: 8px;
+}
+/* Headings and form labels */
+h2, h1, h4, .form-label {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+/* Bootstrap navbar override */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #007bff !important;
+}
+/* Form, alert, and ui tweaks */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.4);
+}
+.alert-info {
+    background-color: #e9f7fd;
+    color: #31708f;
+}
+.list-group-item {
+    font-size: 1rem;
+    padding: 12px 20px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+}
