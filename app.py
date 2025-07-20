@@ -1,17 +1,25 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_migrate import Migrate
+from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 
 from models import db, User, Recommendation
 from forms import RegistrationForm, LoginForm, DashboardForm, FeedbackForm
 from config import Config
-from recommendations import generate_itinerary_by_preference  # NEW import
+from recommendations import generate_itinerary_by_preference  # Custom recommendation logic
 
 app = Flask(__name__)
 app.config.from_object(Config)
 db.init_app(app)
 migrate = Migrate(app, db)
+
+login_manager = LoginManager()
+login_manager.login_view = "login"
+login_manager.init_app(app)
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 @app.route('/')
 def index():
@@ -68,7 +76,6 @@ def logout():
     flash('You have been logged out.', 'info')
     return redirect(url_for('index'))
 
-# ***** UPDATED DASHBOARD (Dropdown, not free text) *****
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
     if 'user_id' not in session:
@@ -81,7 +88,6 @@ def dashboard():
         return redirect(url_for('recommendation'))
     return render_template('dashboard.html', form=form, username=session.get('username'))
 
-# ***** UPDATED RECOMMENDATION LOGIC (Dynamic, All India) *****
 @app.route('/recommendation')
 def recommendation():
     if 'user_id' not in session:
@@ -116,7 +122,7 @@ def itinerary(rec_id):
     if form.validate_on_submit():
         feedback_text = form.feedback.data
         flash('Thank you for your feedback!', 'success')
-        # TODO: Save/process feedback here
+        # Optional: Save or process feedback here
         return redirect(url_for('dashboard'))
 
     itinerary_list = rec.itinerary.split('\n')
@@ -131,41 +137,4 @@ def itinerary(rec_id):
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-=======
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
-import os
-
-from models import db, User
-
-app = Flask(__name__)
-app.config.from_object('config.Config')
-
-# Initialize extensions
-db.init_app(app)
-
-login_manager = LoginManager()
-login_manager.login_view = "auth.login"
-login_manager.init_app(app)
-
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.get(int(user_id))
-
-# Register all blueprints AFTER initializing extensions
-from routes.auth import auth_bp
-from routes.planner import planner_bp
-from routes.user import user_bp
-
-app.register_blueprint(auth_bp)
-app.register_blueprint(planner_bp)
-app.register_blueprint(user_bp)
-
-# Create the DB
-with app.app_context():
-    db.create_all()
-
-if __name__ == '__main__':
->>>>>>> 7496ed3 (initial commit)
     app.run(debug=True)
