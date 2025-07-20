@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 \.venv
 \requirements.txt
+=======
+\venv
+\data
+\instance
+>>>>>>> 7496ed3 (initial commit)
+\__pycache__

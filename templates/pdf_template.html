@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ destination }} Itinerary</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { background: #f0f0f0; padding: 10px; }
+        .day { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Itinerary for {{ destination }}</h1>
+    {% for item in itinerary %}
+    <div class="day">
+        <h2>Day {{ item.day }}</h2>
+        <p><strong>Place:</strong> {{ item.place }}</p>
+        <p><strong>Local Food:</strong> {{ item.food }}</p>
+        <p><strong>Recommended Hotel:</strong> {{ item.hotel }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

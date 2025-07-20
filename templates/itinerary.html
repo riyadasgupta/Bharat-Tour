@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'base.html' %}
 {% block content %}
 <h2>Your Itinerary for {{ rec.place }}</h2>
@@ -11,4 +12,21 @@
   {% endfor %}
 </ul>
 <a href="{{ url_for('dashboard') }}" class="btn btn-primary mt-3">Plan Another Trip</a>
+=======
+{% extends "base.html" %}
+{% block title %}Itinerary - {{ destination }}{% endblock %}
+{% block content %}
+<h2>Your {{ days }}-Day Itinerary for {{ destination }}</h2>
+<ul class="list-group mb-4">
+  {% for i in itinerary %}
+    <li class="list-group-item">
+      <strong>Day {{ i.day }}:</strong> Visit {{ i.place }}, try {{ i.food }}, stay at {{ i.hotel }}.
+    </li>
+  {% endfor %}
+</ul>
+
+<a href="{{ url_for('planner.download_itinerary', destination=destination, days=days) }}" class="btn btn-outline-success">
+  Download PDF Itinerary
+</a>
+>>>>>>> 7496ed3 (initial commit)
 {% endblock %}

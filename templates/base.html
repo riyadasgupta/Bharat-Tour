@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="utf-8">
   <title>Travel Guide India</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,11 +19,46 @@
           {% else %}
             <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
+=======
+  <meta charset="UTF-8">
+  <title>{% block title %}BharatTour-AI Travel Planner{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('planner.home') }}">BharatTour</a>
+
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          {% if current_user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('user.profile') }}">👤 {{ current_user.username }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('auth.logout') }}">Logout</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('auth.register') }}">Register</a>
+            </li>
+>>>>>>> 7496ed3 (initial commit)
           {% endif %}
         </ul>
       </div>
     </div>
   </nav>
+<<<<<<< HEAD
   <div class="container">
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
@@ -37,5 +73,30 @@
     {% block content %}{% endblock %}
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+=======
+
+  <main class="container mt-4">
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    {% endwith %}
+
+    <!-- Page content -->
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="text-center mt-5 mb-3 text-muted">
+    <p>&copy; {{ current_year or 2025 }} AI Travel Planner for India – Explore the Incredible 🇮🇳</p>
+  </footer>
+
+  <!-- Bootstrap JS (optional for navbar toggle and alert close) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+>>>>>>> 7496ed3 (initial commit)
 </body>
 </html>

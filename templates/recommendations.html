@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Recommendations{% endblock %}
+{% block content %}
+<h2>Your Recommended Destinations</h2>
+<div class="row">
+  {% for item in recommendations %}
+  <div class="col-md-4">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5>{{ item.destination }}</h5>
+        <p>{{ item.desc }}</p>
+        <a href="{{ url_for('planner.itinerary', destination=item.destination, days=days) }}" class="btn btn-primary">See Itinerary</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Plan My Trip{% endblock %}
+{% block content %}
+<h2>Select Your Travel Preferences</h2>
+<form method="POST">
+  <div class="mb-3">
+    <label for="theme">Choose Travel Theme</label>
+    <select name="theme" class="form-control">
+      <option value="culture">Culture & Heritage</option>
+      <option value="nature">Nature & Wildlife</option>
+      <option value="spiritual">Spiritual / Wellness</option>
+      <option value="beaches">Beaches & Nightlife</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label>Trip Duration (in days)</label>
+    <input type="number" name="days" class="form-control" min="2" max="10" value="5">
+  </div>
+  <button type="submit" class="btn btn-success">Get Recommendations</button>
+</form>
+{% endblock %}

@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
+<<<<<<< HEAD
 <div class="text-center mt-5">
   <h1>Welcome to Travel Guide India</h1>
   <p>Your personalized platform for Indian culture, food, and destinations.</p>
   <a href="{{ url_for('register') }}" class="btn btn-primary me-2">Register</a>
   <a href="{{ url_for('login') }}" class="btn btn-secondary">Login</a>
+=======
+<div class="hero">
+  <div class="text-center">
+    <h1>Explore India with BharatTour</h1>
+    <p class="lead">Smart, personalized itineraries for every traveler</p>
+    <a href="{{ url_for('planner.plan') }}" class="btn gradient-btn">Plan My Trip</a>
+  </div>
+>>>>>>> 7496ed3 (initial commit)
 </div>
 {% endblock %}

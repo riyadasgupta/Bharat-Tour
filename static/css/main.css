@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap');
+
+body {
+  background: linear-gradient(120deg,#fff9ec 0%,#ffe0e3 100%);
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #432818;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff7ee !important;
+  box-shadow: 0 2px 8px 0 #ffe2b6;
+  border-bottom: 2px solid #ffb46a;
+}
+.navbar-brand {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ee5e24 !important;
+  letter-spacing: 1px;
+}
+.nav-link, .navbar-text {
+  font-size: 1.07rem;
+  color: #843b62 !important;
+}
+.nav-link:hover {
+  color: #ea639a !important;
+}
+/* Hero Banner */
+.hero-gradient {
+  margin: 42px 0 32px 0;
+  border-radius: 26px;
+  padding: 80px 3vw 60px 3vw;
+  background: linear-gradient(125deg, #feca57 0%, #ff6f91 59%, #355c7d 100%);
+  color: #fff;
+  box-shadow: 0 16px 48px 0 rgb(230 100 100 / 18%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInHero 1.2s cubic-bezier(.18,.68,.4,1.15);
+}
+.hero-gradient h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 6px 32px rgba(0,0,0,0.25);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.hero-gradient p {
+  color: #fde4a6;
+  font-size: 1.25rem;
+  margin-bottom: 38px;
+}
+
+@keyframes fadeInHero {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Buttons */
+.gradient-btn {
+  background: linear-gradient(90deg,#ff9800,#e52e71 90%);
+  color: #fff !important;
+  padding: .75rem 2.2rem;
+  font-size: 1.26rem;
+  border: none;
+  border-radius: 2em;
+  font-weight: 700;
+  box-shadow:0 5px 20px #e4a7cb73;
+  transition: filter .22s, transform .20s;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.gradient-btn:hover {
+  filter: brightness(1.13) saturate(1.2);
+  transform: scale(1.045);
+  box-shadow: 0 12px 32px #e52e717e;
+}
+
+/* Card/Recs */
+.card, .list-group-item {
+  border-radius: 14px !important;
+  box-shadow: 0 5px 16px 0 #fdc69431;
+}
+.card:hover {
+  box-shadow:0 16px 32px #fbb04035;
+  transform: translateY(-6px) scale(1.03);
+  transition:box-shadow .2s,transform .2s;
+}
+
+/* Input / Select */
+input, select, textarea {
+  border-radius: 8px !important;
+  border: 1.5px solid #e0b781 !important;
+  background: #fffdf7 !important;
+  font-size:1.08rem;
+}
+
+/* --- Sticky, Aligned Footer --- */
+html, body {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  flex: 1 0 auto;
+}
+
+/* Your main container must expand to push the footer down */
+main.container {
+  flex: 1 0 auto;
+}
+
+footer, .footer-india {
+  flex-shrink: 0;
+  width: 100%;
+  background: #fff8ee;
+  border-top: 2px solid #ffd195;
+  padding: 18px 0 8px;
+  font-size: 1rem;
+  color: #493750;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+  margin-bottom: 0 !important;
+  margin-top: 0.5rem;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+footer p {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero-gradient h1 { font-size: 2.05rem;}
+  .hero-gradient { padding: 45px 2vw 36px 2vw;}
+}
