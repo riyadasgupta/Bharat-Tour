@@ -69,7 +69,3 @@ venv\Scripts\activate # Windows
 - 🛫 Admin Dashboard for travel agency partners
 
 
----
-
-## 🎥 Demo
-
