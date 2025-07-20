@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-{% extends 'base.html' %}
-{% block content %}
-<h2>Your Itinerary for {{ rec.place }}</h2>
-<p><strong>Cuisine Recommendation:</strong> {{ rec.cuisine }}</p>
-<p><strong>Hotels:</strong> {{ rec.hotels }}</p>
-
-<h4>Day-wise Plan:</h4>
-<ul class="list-group">
-  {% for day in itinerary_list %}
-    <li class="list-group-item">{{ day }}</li>
-  {% endfor %}
-</ul>
-<a href="{{ url_for('dashboard') }}" class="btn btn-primary mt-3">Plan Another Trip</a>
-=======
 {% extends "base.html" %}
 {% block title %}Itinerary - {{ destination }}{% endblock %}
 {% block content %}
@@ -28,5 +13,4 @@
 <a href="{{ url_for('planner.download_itinerary', destination=destination, days=days) }}" class="btn btn-outline-success">
   Download PDF Itinerary
 </a>
->>>>>>> 7496ed3 (initial commit)
 {% endblock %}

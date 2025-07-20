@@ -13,10 +13,12 @@ class RegistrationForm(FlaskForm):
     likes_culture = SelectField('Enjoy Culture?', choices=[('yes', 'Yes'), ('no', 'No')], validators=[DataRequired()])
     submit = SubmitField('Register')
 
+
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Login')
+
 
 
 class DashboardForm(FlaskForm):
